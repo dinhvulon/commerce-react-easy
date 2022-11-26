@@ -9,7 +9,7 @@ const Repositories: React.FC = () => {
     <div>
       <form onSubmit={onSubmit}>
         <input type="text" value={term} onChange={(e) => setTerm(e.target.value)} />
-        <button>Search</button>
+        <button>Search1</button>
       </form>
     </div>
   );
