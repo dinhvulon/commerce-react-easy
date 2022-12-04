@@ -1,7 +1,7 @@
-@import '@fontsource/roboto/300.css';
-@import '@fontsource/roboto/400.css';
-@import '@fontsource/roboto/500.css';
-@import '@fontsource/roboto/700.css';
+@import "@fontsource/roboto/300.css";
+@import "@fontsource/roboto/400.css";
+@import "@fontsource/roboto/500.css";
+@import "@fontsource/roboto/700.css";
 
 $font-weight-normal: 400 !default;
 $font-weight-bold: 600 !default;
@@ -14,51 +14,53 @@ $line-height-base: normal !default;
 $body-color: #333333 !default;
 $body-bg: #ffffff !default;
 
-$gray-100: #EBE9E8 !default;
-$gray-200: #BEBEBE !default;
+$gray-100: #ebe9e8 !default;
+$gray-200: #bebebe !default;
 $gray-600: #707070 !default;
 $gray-900: #333333 !default;
-$grays: (
-    ) !default;
+$grays: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
-$grays: map-merge(("100": $gray-100,
-            "200": $gray-200,
-            "600": $gray-600,
-            "900": $gray-900,
-        ),
-        $grays
+$grays: map-merge(
+  (
+    "100": $gray-100,
+    "200": $gray-200,
+    "600": $gray-600,
+    "900": $gray-900,
+  ),
+  $grays
 );
-$yellow: #F2D64C !default;
-$red: #E23333 !default;
-$danger: #DC3545 !default;
-$lightred: #E94545 !default;
+$yellow: #f2d64c !default;
+$red: #e23333 !default;
+$danger: #dc3545 !default;
+$lightred: #e94545 !default;
 $brown: #423931 !default;
-$darkgreen: #3D873D !default;
-$green: #5DAF5D !default;
-$lightgreen : #95C895 !default;
-$be : #AF9874 !default;
+$darkgreen: #3d873d !default;
+$green: #5daf5d !default;
+$lightgreen: #95c895 !default;
+$be: #af9874 !default;
 $brownlight: #493426 !default;
-$lightyellow : #d8cfc8 !default;
-$lightgreen2 : #EAF8EA !default;
-$lightgray : #f5f5f5 !default;
-$graydisbled : #d9d5d3 !default;
+$lightyellow: #d8cfc8 !default;
+$lightgreen2: #eaf8ea !default;
+$lightgray: #f5f5f5 !default;
+$graydisbled: #d9d5d3 !default;
 $greenlight: #97c47e !default;
 $black: #000 !default;
 $lightblue: #adb5bd !default;
 
-$colors: (
-    ) !default;
-$colors: map-merge(("yellow": $yellow,
-            "red": $red,
-            "lightred": $lightred,
-            "brown": $brown,
-            "darkgreen": $darkgreen,
-            "green": $green,
-            "lightgreen": $lightgreen,
-            "be": $be,
-            "brownlight": $brownlight,
-        ),
-        $colors
+$colors: () !default;
+$colors: map-merge(
+  (
+    "yellow": $yellow,
+    "red": $red,
+    "lightred": $lightred,
+    "brown": $brown,
+    "darkgreen": $darkgreen,
+    "green": $green,
+    "lightgreen": $lightgreen,
+    "be": $be,
+    "brownlight": $brownlight,
+  ),
+  $colors
 );
 
 // custom color
@@ -102,183 +104,183 @@ $res_12001599: "only screen and (min-width: 1200px) and (max-width: 1599px)";
 
 // mixin screen responsive
 @mixin screen($point) {
-    @if $point==280 {
-        @media #{$res_280} {
-            @content;
-        }
+  @if $point==280 {
+    @media #{$res_280} {
+      @content;
     }
+  }
 
-    @if $point==240320 {
-        @media #{$res_240320} {
-            @content;
-        }
+  @if $point==240320 {
+    @media #{$res_240320} {
+      @content;
     }
+  }
 
-    @if $point==320374 {
-        @media #{$res_320374} {
-            @content;
-        }
+  @if $point==320374 {
+    @media #{$res_320374} {
+      @content;
     }
+  }
 
-    @if $point==375424 {
-        @media #{$res_375424} {
-            @content;
-        }
+  @if $point==375424 {
+    @media #{$res_375424} {
+      @content;
     }
+  }
 
-    @if $point==424 {
-        @media #{$res_424} {
-            @content;
-        }
+  @if $point==424 {
+    @media #{$res_424} {
+      @content;
     }
+  }
 
-    @if $point==480 {
-        @media #{$res_480} {
-            @content;
-        }
+  @if $point==480 {
+    @media #{$res_480} {
+      @content;
     }
+  }
 
-    @if $point==576 {
-        @media #{$res_576} {
-            @content;
-        }
+  @if $point==576 {
+    @media #{$res_576} {
+      @content;
     }
+  }
 
-    @if $point==425767 {
-        @media #{$res_425767} {
-            @content;
-        }
+  @if $point==425767 {
+    @media #{$res_425767} {
+      @content;
     }
+  }
 
-    @if $point==767 {
-        @media #{$res_767} {
-            @content;
-        }
+  @if $point==767 {
+    @media #{$res_767} {
+      @content;
     }
+  }
 
-    @if $point==768 {
-        @media #{$res_768} {
-            @content;
-        }
+  @if $point==768 {
+    @media #{$res_768} {
+      @content;
     }
+  }
 
-    @if $point==768991 {
-        @media #{$res_768991} {
-            @content;
-        }
+  @if $point==768991 {
+    @media #{$res_768991} {
+      @content;
     }
+  }
 
-    @if $point==991 {
-        @media #{$res_991} {
-            @content;
-        }
+  @if $point==991 {
+    @media #{$res_991} {
+      @content;
     }
+  }
 
-    @if $point==01199500 {
-        @media #{$res_01199500} {
-            @content;
-        }
+  @if $point==01199500 {
+    @media #{$res_01199500} {
+      @content;
     }
+  }
 
-    @if $point==01199499 {
-        @media #{$res_01199499} {
-            @content;
-        }
+  @if $point==01199499 {
+    @media #{$res_01199499} {
+      @content;
     }
+  }
 
-    @if $point==992 {
-        @media #{$res_992} {
-            @content;
-        }
+  @if $point==992 {
+    @media #{$res_992} {
+      @content;
     }
+  }
 
-    @if $point==992767 {
-        @media #{$res_992767} {
-            @content;
-        }
+  @if $point==992767 {
+    @media #{$res_992767} {
+      @content;
     }
+  }
 
-    @if $point==1024768 {
-        @media #{$res_1024768} {
-            @content;
-        }
+  @if $point==1024768 {
+    @media #{$res_1024768} {
+      @content;
     }
+  }
 
-    @if $point==9921023 {
-        @media #{$res_9921023} {
-            @content;
-        }
+  @if $point==9921023 {
+    @media #{$res_9921023} {
+      @content;
     }
+  }
 
-    @if $point==01023 {
-        @media #{$res_01023} {
-            @content;
-        }
+  @if $point==01023 {
+    @media #{$res_01023} {
+      @content;
     }
+  }
 
-    @if $point==1024 {
-        @media #{$res_1024} {
-            @content;
-        }
+  @if $point==1024 {
+    @media #{$res_1024} {
+      @content;
     }
+  }
 
-    @if $point==10241365 {
-        @media #{$res_10241365} {
-            @content;
-        }
+  @if $point==10241365 {
+    @media #{$res_10241365} {
+      @content;
     }
+  }
 
-    @if $point==0102401366 {
-        @media #{$res_0102401366} {
-            @content;
-        }
+  @if $point==0102401366 {
+    @media #{$res_0102401366} {
+      @content;
     }
+  }
 
-    @if $point==01199 {
-        @media #{$res_01199} {
-            @content;
-        }
+  @if $point==01199 {
+    @media #{$res_01199} {
+      @content;
     }
+  }
 
-    @if $point==1200 {
-        @media #{$res_1200} {
-            @content;
-        }
+  @if $point==1200 {
+    @media #{$res_1200} {
+      @content;
     }
+  }
 
-    @if $point==01365 {
-        @media #{$res_01365} {
-            @content;
-        }
+  @if $point==01365 {
+    @media #{$res_01365} {
+      @content;
     }
+  }
 
-    @if $point==01365 {
-        @media #{$res_01365} {
-            @content;
-        }
+  @if $point==01365 {
+    @media #{$res_01365} {
+      @content;
     }
+  }
 
-    @if $point==1366 {
-        @media #{$res_1366} {
-            @content;
-        }
+  @if $point==1366 {
+    @media #{$res_1366} {
+      @content;
     }
+  }
 
-    @if $point==1400 {
-        @media #{$res_1400} {
-            @content;
-        }
+  @if $point==1400 {
+    @media #{$res_1400} {
+      @content;
     }
+  }
 
-    @if $point==1600 {
-        @media #{$res_1600} {
-            @content;
-        }
+  @if $point==1600 {
+    @media #{$res_1600} {
+      @content;
     }
+  }
 
-    @if $point==12001599 {
-        @media #{$res_12001599} {
-            @content;
-        }
+  @if $point==12001599 {
+    @media #{$res_12001599} {
+      @content;
     }
+  }
 }
