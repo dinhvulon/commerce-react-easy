@@ -1,4 +1,4 @@
 const PageError: React.FC = () => {
-  return <div>page err 1</div>;
+  return <div>page err feature</div>;
 };
 export default PageError;
