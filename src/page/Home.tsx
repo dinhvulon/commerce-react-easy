@@ -9,7 +9,7 @@ const Home: React.FC = () => {
   }, []);
   return (
     <div>
-      <Button variant="contained">Hello World</Button>
+      <Button variant="contained">Hello World 1</Button>
       <button></button>
     </div>
   );
