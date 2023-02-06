@@ -1,16 +1,13 @@
-import react, { useEffect } from "react";
-import Button from "@mui/material/Button";
-import categoryApi from "../api/categoryApi";
-import { axiosClient } from "../api/axiosClient";
+import React, { useEffect, useState, useMemo } from 'react';
+import Button from '@mui/material/Button';
+
 const Home: React.FC = () => {
-  useEffect(() => {
-    const url = "/todos";
-    const a = axiosClient.get(url, { params: "" }).then((response: any) => console.log(response));
-  }, []);
   return (
-    <div>
+    <div style={{ padding: '1em', border: '5px solid purple' }}>
       <Button variant="contained">Hello World 1</Button>
-      <button></button>
+      <h1 className="text-3xl font-bold underline">
+        Hello world!
+      </h1>
     </div>
   );
 };
