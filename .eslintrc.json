@@ -13,7 +13,7 @@
     "sourceType": "module",
     "project": "./tsconfig.json"
   },
-  "plugins": ["react", "react-hooks"],
+  "plugins": ["react", "react-hooks", "tailwindcss"],
   "rules": {
     "react/react-in-jsx-scope": "off",
     "@typescript-eslint/member-delimiter-style": "warn",
@@ -55,12 +55,15 @@
     "react/prop-types": "off",
     "@typescript-eslint/quotes": [
       "error",
-      "double",
+      "single",
       {
         "avoidEscape": true,
         "allowTemplateLiterals": true
       }
-    ]
+    ],
+    "tailwindcss/classnames-order": "warn",
+    "tailwindcss/no-custom-classname": "warn",
+    "tailwindcss/no-contradicting-classname": "error"
   },
   "settings": {
     "import/resolver": {
